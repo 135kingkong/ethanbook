@@ -1,14 +1,17 @@
 <p id="notice"><%= notice %></p>
+<div class="page-header">
+	<h1>Status</h1>
+</div>
 
-<p>
-  <strong>Name:</strong>
-  <%= @status.name %>
-</p>
-
-<p>
-  <strong>Content:</strong>
-  <%= @status.content %>
-</p>
-
-<%= link_to 'Edit', edit_status_path(@status) %> |
-<%= link_to 'Back', statuses_path %>
+<div class="status">   
+	<strong><%= @status.name %></strong>
+    <p><%= @status.content %></p>
+	<div class="meta">
+		<%= link_to 'Back to the Wall', statuses_path %> | 
+        <%= link_to time_ago_in_words(@status.created_at) + " ago", @status %>
+		<span class="admin">
+        	| <%= link_to 'Edit', edit_status_path(@status) %>
+        	
+		</span>
+	</div>
+</div>     
