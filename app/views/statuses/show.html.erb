@@ -4,7 +4,7 @@
 </div>
 
 <div class="status">   
-	<strong><%= @status.name %></strong>
+	<strong><%= @status.user.full_name %></strong>
     <p><%= @status.content %></p>
 	<div class="meta">
 		<%= link_to 'Back to Wall', statuses_path %> | 
