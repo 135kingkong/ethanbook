@@ -1,10 +1,13 @@
-<div class="page-header">
-	<h2>Sign in</h2>
-</div>
+
 
 <div class="row-fluid">
 	<div class="span4">
 		<%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name), html: {class: "well"}) do |f| %>
+		
+		<fieldset>
+			
+			<legend>Sign In</legend>
+		
 		  <div class="signin-width-input"><%= f.input :email %><br /></div>
 		
 		  <div class="signin-width-input"><%= f.input :password %><br /></div>
@@ -12,9 +15,10 @@
 		  <% if devise_mapping.rememberable? -%>
 		  
 		    <div class="signin-check"><%= f.input :remember_me, as: :boolean %></div>
-		  <% end -%>
+		</fieldset>
+		  <% end %>
 		
-		  <div><%= f.submit "Sign in" %></div>
+		  <div><%= f.button :submit, "Sign in" %></div>
 		<% end %>
 	</div>
 	
