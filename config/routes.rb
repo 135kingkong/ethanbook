@@ -1,6 +1,14 @@
 Ethanbook::Application.routes.draw do
   devise_for :users, :controllers => {:registrations => "users/registrations"}
   resources :statuses
+  get 'feed', to: 'statuses#index', as: :feed
+  
+  devise_scope :user do
+    get 'register', to: 'users/registrations#new', as: :register
+    get 'sign-in', to: 'devise/sessions#new', as: :sign_in
+    get 'logout', to: 'devise/sessions#destroy', as: :logout
+  end
+  
   
   root to: 'statuses#index'
 
