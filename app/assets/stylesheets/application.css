@@ -17,11 +17,15 @@
 body {padding-top: 50px;}
 
 .rightnav {
-	margin-right:60px;
+	margin-right: 30px;
 }
 
 .leftnav {
 	margin-left:60px;
+}
+
+@media (max-width:789px){
+	.rightnav { margin-right: 5px; }
 }
 
 @media (max-width:767px){
@@ -35,6 +39,10 @@ body {padding-top: 50px;}
 	
 }
 
+@media (max-width:340px){
+		.span4 .well { width: 250px; }
+}
+
 @media (max-width:425px){
 	.searchbar {
 		width:95%;
@@ -42,10 +50,20 @@ body {padding-top: 50px;}
 }
 
 .form-group {
-	width:300px;
+	width:260px;
 } 
 
-textarea#status_content {
+textarea#status_content, select{
 	width:250px;
 	height:200px;
+}
+
+.signin-width-input input {
+	width: 200px;
+} 
+
+.span4 .well { width: 300px; }
+
+.signin-check .boolean {
+	margin-top:-10px;
 }
