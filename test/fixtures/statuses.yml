@@ -9,3 +9,10 @@ two:
   
   content: MyText
   user: ethan
+
+three:
+
+  content: "Yo I'm Bob Marley man"
+  user: bob
+
+
