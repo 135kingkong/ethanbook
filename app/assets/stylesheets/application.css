@@ -141,9 +141,15 @@ body {padding-top: 50px;}
 
 
 
-@media (max-width:788px){
+@media (max-width:810px){
 	.rightnavx2 {
 		margin-right:5px;
+	}
+}
+
+@media (max-width:770px){
+	.rightnavx2 {
+		margin-right:0px;
 	}
 }
 

@@ -1,4 +1,5 @@
 Ethanbook::Application.routes.draw do
+  get "profiles/show"
   devise_for :users, :controllers => {:registrations => "users/registrations"}
   resources :statuses
   get 'feed', to: 'statuses#index', as: :feed
