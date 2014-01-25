@@ -25,7 +25,8 @@
 	  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	    <ul class="nav navbar-nav">
     	      <li class="<%= 'active' if current_page?(root_path) or current_page?(feed_path) or current_page?(statuses_path) %>"><%= link_to "Feed", root_path %></li>
-    	      <li><%= link_to "Profile" %></li>
+
+    	      
 	          
 	        </ul>
 	   
@@ -41,7 +42,8 @@
 	    <ul class="nav navbar-nav navbar-right">
   	     	<% if user_signed_in? %>
 		 
-  	     		<li><%= link_to current_user.full_name, edit_user_registration_path %></li>
+		 		<li><%= link_to current_user.full_name, profile_path(current_user.profile_name) %></li>
+  	     		<li><%= link_to "Settings", edit_user_registration_path %></li>
 				<li class="rightnav"><%= link_to "Log Out", logout_path %></li>
 			<% else %>
 				

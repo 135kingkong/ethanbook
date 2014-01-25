@@ -3,15 +3,22 @@
 	<h1>Status</h1>
 </div>
 
-<div class="status">   
-	<strong><%= @status.user.full_name %></strong>
-    <p><%= @status.content %></p>
-	<div class="meta">
-		<%= link_to 'Back to Feed', root_path %> | 
-        <%= link_to time_ago_in_words(@status.created_at) + " ago", @status %>
-		<span class="admin">
-        	| <%= link_to 'Edit', edit_status_path(@status) %>
-        	
-		</span>
+<div class="status"> 
+	<div class="row">  
+		<div class="col-xs-1 pic">
+			<%= image_tag @status.user.gravatar_url %>
+		</div>
+		<div class="col-xs-7 moveover">
+			<strong><%= @status.user.full_name %></strong>
+		    <p><%= @status.content %></p>
+			<div class="meta">
+				<%= link_to 'Back to Feed', root_path %> | 
+		        <%= link_to time_ago_in_words(@status.created_at) + " ago", @status %>
+				<span class="admin"><% if @status.user == current_user %>
+		        	| <%= link_to 'Edit', edit_status_path(@status) %>
+		        	<% end %>
+				</span>
+			</div>
+		</div>
 	</div>
 </div>     
