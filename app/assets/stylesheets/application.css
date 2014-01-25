@@ -12,6 +12,16 @@
  *= require_tree .
  */
 
+
+
+
+
+.panel-footer .container p {
+	margin: 0; 
+	text-align: center;
+
+}
+
 .pic {
 	padding-right: 15px;
 }
