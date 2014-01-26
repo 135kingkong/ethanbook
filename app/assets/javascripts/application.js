@@ -14,6 +14,7 @@
 //= require jquery.turbolinks
 //= require jquery_ujs
 //= require jquery-migrate-1.2.1
-//= require bootstrap
+
 //= require turbolinks
 //= require_tree .
+//= require bootstrap
