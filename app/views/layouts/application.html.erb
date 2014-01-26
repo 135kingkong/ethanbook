@@ -2,10 +2,23 @@
 <html>
 <head>
   <title>Ethanbook</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <script src="/vendor/assets/javascripts/jquery-migrate-1.2.1.js"></script>
-  <%= csrf_meta_tags %>
+  <link data-turbolinks-track="true" href="/assets/application.css?body=1" media="all" rel="stylesheet" />
+<link data-turbolinks-track="true" href="/assets/bootstrap-theme.css?body=1" media="all" rel="stylesheet" />
+<link data-turbolinks-track="true" href="/assets/bootstrap-theme.min.css?body=1" media="all" rel="stylesheet" />
+<link data-turbolinks-track="true" href="/assets/bootstrap.css?body=1" media="all" rel="stylesheet" />
+<link data-turbolinks-track="true" href="/assets/bootstrap.min.css?body=1" media="all" rel="stylesheet" />
+<link data-turbolinks-track="true" href="/assets/profiles.css?body=1" media="all" rel="stylesheet" />
+<link data-turbolinks-track="true" href="/assets/scaffolds.css?body=1" media="all" rel="stylesheet" />
+<link data-turbolinks-track="true" href="/assets/statuses.css?body=1" media="all" rel="stylesheet" />
+  <script data-turbolinks-track="true" src="/assets/jquery.js?body=1"></script>
+<script data-turbolinks-track="true" src="/assets/jquery_ujs.js?body=1"></script>
+<script data-turbolinks-track="true" src="/assets/turbolinks.js?body=1"></script>
+<script data-turbolinks-track="true" src="/assets/jquery.turbolinks.js?body=1"></script>
+<script data-turbolinks-track="true" src="/assets/bootstrap.js?body=1"></script>
+<script data-turbolinks-track="true" src="/assets/bootstrap.min.js?body=1"></script>
+<script data-turbolinks-track="true" src="/assets/profiles.js?body=1"></script>
+<script data-turbolinks-track="true" src="/assets/statuses.js?body=1"></script>
+<script data-turbolinks-track="true" src="/assets/application.js?body=1"></script>
   <meta name="viewport" content="width=device-width, inititial-scale=1.0, user-scalable=no" />
 </head>
 <body <% if user_signed_in? %>class="paddingmobile"<% end %> >
