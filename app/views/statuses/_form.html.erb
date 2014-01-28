@@ -11,9 +11,11 @@
     </div>
   <% end %>
 
- 	  
-	<br />
-    <div "form"><%= f.input :content %></div>
+ 	  <strong><%= current_user.full_name %></strong>
+	
+    <div "form">
+      <br /><%= f.input :content %>
+    </div>
 
   <div class="form-actions">
 	  <br />
