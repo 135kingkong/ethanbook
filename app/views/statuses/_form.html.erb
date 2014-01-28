@@ -11,12 +11,13 @@
     </div>
   <% end %>
 
- 	<%= f.input :user_id, collection: User.all.where(:first_name => current_user.first_name), label_method: :full_name  %>
+ 	  
 	<br />
     <div "form"><%= f.input :content %></div>
 
   <div class="form-actions">
 	  <br />
+
     <%= f.button :submit, class: "btn-primary" %>
   </div>
   <br />

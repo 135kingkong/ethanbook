@@ -20,6 +20,7 @@
 <script data-turbolinks-track="true" src="/assets/application.js?body=1"></script>
   <meta name="google-site-verification" content="kKTHhNjapuFDmwDtfeDD1FP0Qh7ngw3KXyerKBGJW_I" />
   <meta name="viewport" content="width=device-width, inititial-scale=1.0, user-scalable=no" />
+  <%= csrf_meta_tags %>
 </head>
 <body <% if user_signed_in? %>class="paddingmobile"<% end %> >
 	
