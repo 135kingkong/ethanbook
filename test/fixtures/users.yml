@@ -12,5 +12,8 @@ bob:
   profile_name: "bobmarleyman"
 
 
-
-  
+mike:
+  first_name: "mike"
+  last_name: "the frog"
+  email: "mike@teamtreehouse.com"
+  profile_name: "mikethefrog"
