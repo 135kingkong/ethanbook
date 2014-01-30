@@ -10,6 +10,10 @@ gem 'rails', '4.0.2'
 gem 'devise'
 gem 'simple_form'
 
+group :test do
+	gem 'shoulda'
+end
+
 group :production do
 	gem 'pg'
 end
